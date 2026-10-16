@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>Anatomía de una motocicleta</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark">🏍️</span><span>DE CERO A<br><b>EXPERTO</b></span></a>
+  <button class="menu-btn" aria-label="Abrir menú" onclick="toggleMenu()">☰</button>
+</header>
+<nav id="menu" class="mobile-menu">
+  <a href="index.html">🏠 Inicio</a><a href="anatomia.html">🔧 Conoce tu moto</a>
+  <a href="#sistemas">⚙️ Sistemas</a><a href="#ayuda">💡 Cómo estudiar</a>
+</nav>
+
+<main>
+<div class="breadcrumb"><a href="index.html">Inicio</a> / Anatomía</div>
+<section class="page-head">
+  <p class="section-kicker">CAPÍTULO 03</p>
+  <h1>Anatomía de una motocicleta</h1>
+  <p>Una motocicleta puede estudiarse como la integración de varios sistemas que trabajan de forma coordinada.</p>
+</section>
+
+<section class="moto-stage">
+  <div class="bike-placeholder">
+    <div class="bike-silhouette">🏍️</div>
+    <p>DIAGRAMA INTERACTIVO</p>
+    <small>Aquí colocaremos la ilustración de una motocicleta con puntos táctiles.</small>
+  </div>
+</section>
+
+<section id="sistemas" class="systems">
+  <div class="system-card"><span>🔥</span><div><h3>Motor</h3><p>El corazón que transforma la energía en movimiento.</p></div><button onclick="showInfo('motor')">Ver</button></div>
+  <div class="system-card"><span>🌬️</span><div><h3>Admisión y combustible</h3><p>Prepara y suministra lo que el motor necesita para funcionar.</p></div><button onclick="showInfo('admision')">Ver</button></div>
+  <div class="system-card"><span>❄️</span><div><h3>Refrigeración</h3><p>Ayuda a mantener el motor dentro de su rango térmico.</p></div><button onclick="showInfo('refrigeracion')">Ver</button></div>
+  <div class="system-card"><span>🛢️</span><div><h3>Lubricación</h3><p>Reduce fricción y desgaste y ayuda a transportar calor.</p></div><button onclick="showInfo('lubricacion')">Ver</button></div>
+  <div class="system-card"><span>⚡</span><div><h3>Encendido</h3><p>Participa en el inicio de la combustión en motores de gasolina.</p></div><button onclick="showInfo('encendido')">Ver</button></div>
+  <div class="system-card"><span>⚙️</span><div><h3>Transmisión</h3><p>Lleva el movimiento del motor hacia la rueda.</p></div><button onclick="showInfo('transmision')">Ver</button></div>
+  <div class="system-card"><span>🧱</span><div><h3>Chasis</h3><p>Forma parte de la estructura que soporta e integra los componentes.</p></div><button onclick="showInfo('chasis')">Ver</button></div>
+  <div class="system-card"><span>↔️</span><div><h3>Dirección</h3><p>Permite orientar la motocicleta.</p></div><button onclick="showInfo('direccion')">Ver</button></div>
+  <div class="system-card"><span>🌀</span><div><h3>Suspensión</h3><p>Gestiona el movimiento entre ruedas y motocicleta.</p></div><button onclick="showInfo('suspension')">Ver</button></div>
+  <div class="system-card"><span>🛞</span><div><h3>Ruedas y neumáticos</h3><p>Conectan la motocicleta con la superficie de rodadura.</p></div><button onclick="showInfo('ruedas')">Ver</button></div>
+  <div class="system-card"><span>🛑</span><div><h3>Frenos</h3><p>Permiten reducir la velocidad y detener la motocicleta.</p></div><button onclick="showInfo('frenos')">Ver</button></div>
+  <div class="system-card"><span>🔌</span><div><h3>Sistema eléctrico/electrónico</h3><p>Alimenta, controla y comunica diferentes funciones.</p></div><button onclick="showInfo('electrico')">Ver</button></div>
+  <div class="system-card"><span>💨</span><div><h3>Escape</h3><p>Conduce los gases de escape y participa en emisiones y sonido.</p></div><button onclick="showInfo('escape')">Ver</button></div>
+  <div class="system-card"><span>📟</span><div><h3>Instrumentación y seguridad</h3><p>Informa al piloto y reúne elementos de seguridad.</p></div><button onclick="showInfo('instrumentacion')">Ver</button></div>
+</section>
+
+<section id="ayuda" class="study-tip">
+  <span>💡</span><div><b>Tip práctico</b><p>Cada capítulo que sigue profundiza en uno de estos sistemas. Si en algún momento te pierdes, vuelve a este mapa para ubicarte.</p></div>
+</section>
+
+<div id="info" class="info-panel" hidden></div>
+<div class="back"><a href="index.html">← Volver al inicio</a></div>
+</main>
+<footer>De Cero a Experto · Anatomía de una motocicleta</footer>
+<script src="app.js"></script>
+</body>
+</html>
